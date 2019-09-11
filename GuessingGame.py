@@ -1,4 +1,5 @@
 #GuessGame
+import tkinter as tk #библиотека для gui
 import random #подключаем библиотеку для генерации псевдо-случайных чисел
 #from msvcrt import getch - пока не разобрался
 guessCount = 1
@@ -6,6 +7,15 @@ guessCount = 1
 guessLimit = random.randrange(1, 6)
 #ответ на вопрос будет генерироваться случайным образом каждую игру. Ответом будет число от 1 до 15.
 secretNumber = random.randrange(1, 16)
+
+#формируем gui
+window = tk.Tk()
+window.title("Guess or take dick in the face")
+window.geometry("640x480")
+
+#LABEL
+title = tk.Label(text=)
+window.mainloop()
 
 #функция для защиты от ебланов, проверка на то, что введено целое число
 def isint(s):
